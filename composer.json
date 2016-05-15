@@ -1,0 +1,21 @@
+{
+    "name": "roketid/imagemax",
+    "description": "Simple helper to generate ImageMax URL",
+    "homepage": "https://github.com/roketID/php-imagemax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mokhamad Rofiudin",
+            "email": "mokh.rofiudin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "RoketId\\ImageMax\\": "src/"
+        }
+    },
+    "minimum-stability": "dev-master"
+}
