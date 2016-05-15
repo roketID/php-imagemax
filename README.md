@@ -22,16 +22,16 @@ $config = [
 ];
 
 // Initial
-ImageMax::init($config);
+$imx = new ImageMax($config);
 
 // Get thumbnail URL
-ImageMax::make('files/my_picture.jpg', 'thumb');
+$imx->make('files/my_picture.jpg', 'thumb');
 
 // with different format, mention it in third parameter
-ImageMax::make('files/my_picture.jpg', 'thumb', 'png');
+$imx->make('files/my_picture.jpg', 'thumb', 'png');
 
 // Get image directly from options array
-ImageMax::make('files/my_picture.jpg', [
+$imx->make('files/my_picture.jpg', [
   'w' => 128, // width
   'h' => 128, // height
   'q' => 8, // quality
@@ -40,5 +40,5 @@ ImageMax::make('files/my_picture.jpg', [
 ]);
 
 // Get image from absolute URL
-ImageMax::make('https://my.base.url/files/my_picture.jpg', 'thumb');
+$imx->make('https://my.base.url/files/my_picture.jpg', 'thumb');
 
