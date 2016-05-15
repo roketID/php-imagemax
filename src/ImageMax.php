@@ -68,6 +68,6 @@ class ImageMax
 
         $sufix = $format ? $options : Helper::replaceLast($format, $extension, $options);
 
-        return $url.'_'.$sufix;
+        return static::IMAGEMAX_URL. $canonical. '/'. $url.'_'.$sufix;
     }
 }
