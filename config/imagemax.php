@@ -2,8 +2,8 @@
 
 return [
 
-    'canonical' => '<YOUR CANONICAL NAME>',
-    'baseurl' => '<YOUR BASE URL>',
+    'canonical' =>  env('IMAGEMAX_CANONICAL'), // YOUR CANONICAL NAME
+    'baseurl' => env('IMAGEMAX_BASEURL'), // YOUR BASE URL
     'profiles' => [
         
         'thumb' => [
