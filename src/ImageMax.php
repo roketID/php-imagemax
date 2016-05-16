@@ -36,7 +36,7 @@ class ImageMax
         $baseurl = static::$baseurl;
         $profiles = static::$profiles;
         
-        $url = ltrim(static::replaceFirst($baseurl, '', $url), '/');
+        $url = ltrim(Helper::replaceFirst($baseurl, '', $url), '/');
 
         $extension = $format ?: pathinfo($url, PATHINFO_EXTENSION);
 
