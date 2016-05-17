@@ -68,7 +68,7 @@ class ImageMax
 
         $format = pathinfo($options, PATHINFO_EXTENSION);
 
-        $sufix = $format ? $options : Helper::replaceLast($format, $extension, $options);
+        $sufix = $format ? $options : rtrim($options, '.').'.'.$extension;
 
         return static::IMAGEMAX_URL. $canonical. '/'. $url.'_'.$sufix;
     }
