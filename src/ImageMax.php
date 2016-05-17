@@ -40,6 +40,8 @@ class ImageMax
 
         $extension = $format ?: pathinfo($url, PATHINFO_EXTENSION);
 
+        $url = Helper::replaceLast('.'.pathinfo($url, PATHINFO_EXTENSION), '', $url);
+
         // options
         if (!is_array($options) && ($profile = Helper::get($profiles, $options))) {
             $options = $profile;
