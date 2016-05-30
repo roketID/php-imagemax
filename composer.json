@@ -16,6 +16,5 @@
         "psr-4": {
             "RoketId\\ImageMax\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
